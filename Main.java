@@ -25,6 +25,12 @@ public class Main {
         example.add("cat");
         example.add("at");
         System.out.println(example);
-        ArrayList<String> example2 = createList("cat");
+        WordChecker t = new WordChecker(example);
+        ArrayList<String> s = t.createList("cat");
+        System.out.println(s);
+        ArrayList<String> r = t.createList("catch");
+        System.out.println(r);
+        ArrayList<String> k = t.createList("dog");
+        System.out.println(k);
     }
 }
